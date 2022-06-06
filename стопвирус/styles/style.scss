@@ -1,0 +1,249 @@
+@import 'variables';
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+}
+
+body {
+    color: $dark;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $bghead;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    &__item {
+        margin-left: 40px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:nth-child(4n) {
+            margin: 25px;
+        }
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+    &__link {
+        color: $dark;
+        text-decoration: none;
+    }
+    &__btn {
+        color: $dark;
+        text-decoration: none;
+        padding: 6px 15px;
+        border-radius: 40px;
+        border: 1px solid $blue;
+    }
+}
+
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 0;
+}
+input {
+  width: 170px;
+  height: 24px;
+  padding-left: 15px;
+  border-radius: 40px;
+  border: 1px solid #DCDCDC;
+  background: $gray;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 200px;
+}
+
+.textImg {
+    display: flex;
+    position: relative;
+    height: 755px;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+}
+
+.textImgt {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+}
+
+.banner {
+    text-align: center;
+    background-color: $gray;
+    position: relative;
+    &.banner-1 {
+        padding-bottom: 120px;
+    }
+    &__title {
+        color: $blue1;
+        font-size: 5rem;
+        max-width: 49rem;
+        margin: 0;
+    }
+    &__titlet {
+        color: $blue1;
+        font-size: 3rem;
+        max-width: 400px;
+        margin: 0;
+    }
+    &__text {
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 38rem;
+        margin: 0;
+    }
+    &__textt {
+        padding-top: 2rem;
+        font-size: 2rem;
+        max-width: 475px;
+        margin: 0;
+    }
+    &__source {
+        padding-top: 2rem;
+        font-size: 2rem;
+        margin: 0;
+    }
+    &__img {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+    }
+  }
+
+  .colortext {
+      color: $blue;
+  }
+
+  .btn-groupe {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      &__btn {
+          border: 1px solid $pink;
+          padding: 25px 50px;
+          border-radius: 10px;
+          background: linear-gradient(0deg, #F2A089 5.83%, #F0B8A9 101.69%), #EDAC9B;
+          color: $gray;
+          margin: 40px 0;
+      }
+      &__btn-main {
+        text-decoration: underline;
+        color: $blue;
+        margin: 20px 0;
+      }
+      &__source {
+          font-size: 2rem;
+          text-decoration: underline;
+          color: $blue;
+      }
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    font-size: 14px;
+}
+
+.footer-one {
+    display: flex;
+    margin-right: 130.55px;
+}
+
+.footer-two {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.footer-two a {
+    padding-bottom: 1rem; 
+    &:last-child {
+    padding-bottom: 0;
+    }
+}
+
+.footer-three {
+    display: flex;
+    flex-direction: column;
+    padding-right: 283px;
+}
+
+.footer-three a {
+    padding-bottom: 1rem;
+    &:last-child {
+    padding-bottom: 0;
+        }
+}
+
+.footer-four {
+    text-align: right;
+    &__podpis {
+        margin: 0px;
+        padding-bottom: 11px;
+        max-width: 230px;
+        &:last-child {
+        padding-bottom: 0;
+        }
+    }
+}
+
+.footer-four a {
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    &__copyright {
+        margin: 0;
+    }
+}
