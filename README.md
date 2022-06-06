@@ -1,2 +1,0 @@
-# stopvirus
-Educational project
